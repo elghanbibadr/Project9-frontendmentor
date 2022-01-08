@@ -50,3 +50,28 @@ h3 {
     font-size: 2.4rem;
   }
 }
+/* link */
+a {
+  text-decoration: none;
+}
+.link-arrow {
+  color: var(--color-orange);
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  font-weight: bold;
+}
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.2s;
+}
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+}
