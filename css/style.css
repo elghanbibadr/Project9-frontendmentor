@@ -3,4 +3,50 @@
 *::before {
   box-sizing: border-box;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-primary: #210e6b;
+  --color-secondary: #00d9ff;
+  --color-accent: #2584ff;
+  --color-orange: #ff3400;
+  --color-body: #5d5d5d;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: var(--color-body);
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+/* typography */
+h1,
+h2,
+h3 {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 7rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 8rem;
+  }
+  body {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
 }
