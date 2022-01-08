@@ -12,6 +12,7 @@
   --color-accent: #2584ff;
   --color-orange: #ff3400;
   --color-body: #5d5d5d;
+  --border-radius: 20px;
 }
 html {
   font-size: 62.5%;
@@ -74,4 +75,22 @@ a {
     font-size: 1.5rem;
     margin-top: 3rem;
   }
+}
+
+/* badge */
+.badge {
+  border-radius: var(--border-radius);
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
+  color: white;
+  font-weight: 600;
+}
+.badge--primary {
+  background-color: var(--color-secondary);
+}
+.badge--secondary {
+  background-color: var(--color-primary);
+}
+.badge--small {
+  font-size: 1.6rem;
 }
