@@ -94,3 +94,51 @@ a {
 .badge--small {
   font-size: 1.6rem;
 }
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
+/* Lists */
+.list {
+  color: var(--color-primary);
+  list-style: none;
+}
+.list--inline {
+  display: flex;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.list__items--inline {
+  margin: 1rem 3rem;
+}
+.list__items--block {
+  margin: 1rem 0;
+}
+.list--block {
+  list-style-image: url(/tick.svg);
+  padding-left: 3rem;
+}
+/* icon */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.icon--primary {
+  fill: var(--color-accent);
+  /* margin-right: 1rem; */
+}
+
+.icon-container {
+  width: 64px;
+  height: 64px;
+  background-color: #f3f9fa;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
